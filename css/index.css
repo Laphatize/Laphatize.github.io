@@ -1,0 +1,79 @@
+ul {
+  list-style-type: none;
+  margin-top: 0%;
+  padding: 0%;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+.label,
+.badge {
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: bold;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.label {
+  border-radius: 4px;
+  display: inline;
+}
+
+.badge {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px 7px;
+}
+
+.label[href]:hover, .label[href]:focus {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.badge:hover, a.badge:focus {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.label a,
+.badge a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.label:empty,
+.badge:empty {
+  display: none;
+}
+
+li {
+  float: left;
+  font-family:arial;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+body {
+	font-family:arial;
+}
+
