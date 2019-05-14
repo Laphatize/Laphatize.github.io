@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<head>
+<title> Redirecting... </title>
+</head>
+<body>
+<p1> We're taking you to: https://pranavramesh.typeform.com/to/JhV6t5! </p1>
+
+<script>
+window.location.href = "https://pranavramesh.typeform.com/to/JhV6t5";
+
+</script>
+</body>
