@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<head>
+    <title> School Defender </title>
+</head>
+<body>
+
+<center>
+    <div style="margin-top:5%;font-style:arial;" class="scan-message">
+
+        <h1> Please point your phone at the bar code.</h1>
+
+
+
+
+        <center> <button onclick="window.location.href='./login.html'">Store</button> <button>Fetch</button> </center>
+        <video id="video" width="640" height="280" autoplay></video>
+        <br>
+        <center>
+        
+    </center>
+        <h2>Car Details</h2>
+        <p id="cardDetails">nothing found</p>
+
+    </div>
+</center>
+
+<script>
+        var video = document.getElementById('video');
+
+        // Get access to the camera!
+        if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            // Not adding `{ audio: true }` since we only want video now
+            navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+                //video.src = window.URL.createObjectURL(stream);
+                video.srcObject = stream;
+                video.play();
+            });
+        }
+</script>
+
+</body>
