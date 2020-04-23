@@ -1,3 +1,118 @@
-I'm just taking a break. <br>
-I'll be back, I always come back. <br>
-~ Pranav Ramesh <br>
+<!DOCTYPE HTML>
+<body style="background-color:black;">
+  
+<pre style="background-color:black;color:white;" id="typewriter">
+<span class="var-highlight">var</span> object = {
+    name: <span class="string-highlight">'laphatize studios'</span>,
+    mission: <span class="string-highlight">'make cool stuff'</span>,
+    email: <span class="string-highlight">'laphatize@elliebot.xyz'</span>,
+    inventory:[<span class="string-highlight">'elliebot.xyz'</span>,
+                <span class="string-highlight">'1shoot.laphatize.com'</span>,
+                <span class="string-highlight">'getjola.com (sold)'</span>];
+}; </pre>
+
+<style>
+.var-highlight{
+	color: #C0AD60;
+}
+.string-highlight{
+	color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+		font-size: 2em;
+		margin: 0;
+		font-family: "Courier New";
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}</style>
+
+<script>	function setupTypewriter(t) {
+	    var HTML = t.innerHTML;
+
+	    t.innerHTML = "";
+
+	    var cursorPosition = 0,
+	        tag = "",
+	        writingTag = false,
+	        tagOpen = false,
+	        typeSpeed = 100,
+        tempTypeSpeed = 0;
+
+	    var type = function() {
+        
+	        if (writingTag === true) {
+	            tag += HTML[cursorPosition];
+	        }
+
+	        if (HTML[cursorPosition] === "<") {
+	            tempTypeSpeed = 0;
+	            if (tagOpen) {
+	                tagOpen = false;
+	                writingTag = true;
+	            } else {
+	                tag = "";
+	                tagOpen = true;
+	                writingTag = true;
+	                tag += HTML[cursorPosition];
+	            }
+	        }
+	        if (!writingTag && tagOpen) {
+	            tag.innerHTML += HTML[cursorPosition];
+	        }
+	        if (!writingTag && !tagOpen) {
+	            if (HTML[cursorPosition] === " ") {
+	                tempTypeSpeed = 0;
+	            }
+	            else {
+	                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+	            }
+	            t.innerHTML += HTML[cursorPosition];
+	        }
+	        if (writingTag === true && HTML[cursorPosition] === ">") {
+	            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+	            writingTag = false;
+	            if (tagOpen) {
+	                var newSpan = document.createElement("span");
+	                t.appendChild(newSpan);
+	                newSpan.innerHTML = tag;
+	                tag = newSpan.firstChild;
+	            }
+	        }
+
+	        cursorPosition += 1;
+	        if (cursorPosition < HTML.length - 1) {
+	            setTimeout(type, tempTypeSpeed);
+	        }
+
+	    };
+
+	    return {
+	        type: type
+	    };
+	}
+
+	var typer = document.getElementById('typewriter');
+
+	typewriter = setupTypewriter(typewriter);
+
+	typewriter.type();</script>
+</body>
