@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="https://cdn.glitch.com/a28fe127-9040-4422-8081-fe7b8fd0b5ca%2Fblue-logo.png?v=1598582798305">
+    <!-- Open graph metadata -->
+    <meta name="description" content="A simple, dynamic and customisable dashboard system with Discord integration for amazon groups." />
+    <meta name="og:title" content="Crimson Status" />
+    <meta name="og:description" content="A simple, dynamic and customisable dashboard system with Discord integration for amazon groups."/>
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://crimson.link/status" />
+    <meta name="og:locale" content="en_US" />
+    <!-- https://cdn.discordapp.com/icons/746716385601650688/0bc263bec76b93e0017c55d140ff5cad.webp -->
+    <meta name="og:image" content="https://cdn.glitch.com/a28fe127-9040-4422-8081-fe7b8fd0b5ca%2Fblue-logo.png?v=1598582798305" />
+    <meta name="og:site_name" content="crimson.link">
+    <meta name="twitter:image:alt" content="Crimson Logo">
+    <script src="./forcehttps.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Required meta tags -->
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+    <link href="https://cdn.sellix.io/static/css/embed.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .btn {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>TOS - Crimson</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a style="font-family: 'Bebas Neue', sans-serif;font-size:3rem;" class="navbar-brand" href="/"><b>Crimson</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       
+          </ul>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a  class="btn btn-lg  btn-outline-light" href="./login"><i class="fas fa-sign-in-alt"></i> LOGIN</a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+              <a
+                class="btn btn-lg  btn-outline-light"
+                href="https://discord.gg/B9HbfbN"
+                target="_blank"
+                ><i class="fab fa-discord"></i> DISCORD</a
+              >
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+              <a  data-sellix-product="5f410d561b6c5"
+              data-sellix-custom-discord="“laphatize#0249”"
+              alt="Buy Now with Sellix.io"
+              class="btn  btn-lg  btn-outline-light" href="#"><i class="fab fa-paypal"></i> BUY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="text-center text-white"
+      style="background-image: url('https://cdn.glitch.com/a28fe127-9040-4422-8081-fe7b8fd0b5ca%2FMonthly-Website-Header-background.jpg?v=1598056161590')"
+    >
+         <br /><br />
+      <h1 style="font-family: 'Bebas Neue', sans-serif;font-size:5rem;"><i class="fas fa-caret-left"></i> System Status <i class="fas fa-caret-right"></i></h1>
+      
+      <br />
+    </div>
+    <br /><br />
+    <div class="container text-white">
+      <h3 style="font-family: 'Roboto', sans-serif;">Global Infrastructure Status</h3>
+      <div class="accordion" id="accordionExample">
+        <div class="card bg-dark">
+          <div class="card-header" id="headingOne">
+        
+                <div class="row">
+                    <div class="col">
+              <a class="text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        USA East - Main Server
+
+              </a>
+            </div>
+            <div class="col">
+              <span class="text-right" style="color:orange">Maintainence</span>
+            </div>
+        </div>
+           
+          </div>
+      
+          <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+Developers are actively working on updates to the website that may temporarily degrade user experience.
+            </div>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <div class="card-header" id="headingTwo">
+            <div class="row">
+                <div class="col">
+          <a class="text-left text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    USA East - Backup Server
+          </a>
+        </div>
+        <div class="col">
+          <span class="text-right" style="color:lime">Online</span>
+        </div>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Backup Server is not in use right now. But is ready to leap into action whenever needed.
+    </div>
+    </div>
+    </div>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <div class="card-header" id="headingThree">
+            <div class="row">
+                <div class="col">
+          <a class="text-left text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                 EU - International Server
+          </a>
+        </div>
+        <div class="col">
+          <span class="text-right" style="color:rgb(136, 136, 136)">Offline</span>
+        </div>
+    </div>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+           This server has no need to be used yet. Once we start getting more EU customers we will bring this server online.
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-dark">
+            <div class="card-header" id="headingFour">
+              <div class="row">
+                  <div class="col">
+            <a class="text-left text-white" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                 MongoDB Cluster
+            </a>
+          </div>
+          <div class="col">
+            <span class="text-right" style="color:lime">Online</span>
+        </div>
+      </div>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+No issues with our database provider.             
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      
+      <br />
+
+      <br /><br />
+    </div>
+
+      
+      
+    
+
+    <div class="container text-white text-center">
+      <br />
+      <span>&copy; Laphatize 2020</span
+      ><span style="color: rgba(255, 255, 255, 0.5)"> - </span>
+      <span><a class="text-white" href="./tos">Terms of Service</a></span>
+      <br /><br />
+    </div>
+   
+
+    <script
+      src="https://kit.fontawesome.com/13433183d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
